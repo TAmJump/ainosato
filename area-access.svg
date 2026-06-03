@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF8F2"/><stop offset="1" stop-color="#F2ECDF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="10" y="10" width="780" height="580" fill="none" stroke="#E3DCCB" stroke-width="2"/>
+
+  <!-- eyebrow -->
+  <text x="40" y="56" fill="#B0883E" font-size="14" font-weight="700" letter-spacing="3" font-family="Inter,sans-serif">ACCESS / 位置関係イメージ</text>
+
+  <!-- main roads -->
+  <rect x="0" y="350" width="800" height="40" fill="#EAE3D4"/>
+  <rect x="330" y="120" width="34" height="470" fill="#EAE3D4"/>
+  <line x1="0" y1="370" x2="800" y2="370" stroke="#fff" stroke-width="2" stroke-dasharray="14 12"/>
+  <line x1="347" y1="120" x2="347" y2="590" stroke="#fff" stroke-width="2" stroke-dasharray="14 12"/>
+
+  <!-- JR line (diagonal) -->
+  <line x1="60" y1="250" x2="760" y2="160" stroke="#22305C" stroke-width="9"/>
+  <line x1="60" y1="250" x2="760" y2="160" stroke="#fff" stroke-width="2" stroke-dasharray="16 14"/>
+  <text x="600" y="150" fill="#22305C" font-size="15" font-weight="700">JR 学園都市線</text>
+
+  <!-- station -->
+  <g>
+    <rect x="380" y="196" width="120" height="46" rx="6" fill="#22305C"/>
+    <text x="440" y="224" fill="#fff" font-size="16" font-weight="700" text-anchor="middle">あいの里教育大駅</text>
+  </g>
+
+  <!-- rotary -->
+  <circle cx="300" cy="300" r="42" fill="none" stroke="#9AA0AC" stroke-width="10"/>
+  <circle cx="300" cy="300" r="16" fill="#CFE3CF"/>
+  <text x="300" y="372" fill="#6A6E76" font-size="13" text-anchor="middle">駅前ロータリー</text>
+
+  <!-- property -->
+  <g>
+    <rect x="150" y="250" width="118" height="100" rx="8" fill="#B0883E"/>
+    <rect x="150" y="250" width="118" height="100" rx="8" fill="none" stroke="#8f6d2f" stroke-width="2"/>
+    <text x="209" y="294" fill="#fff" font-size="17" font-weight="900" text-anchor="middle">本物件</text>
+    <text x="209" y="318" fill="#fff" font-size="12" text-anchor="middle">駅徒歩1分</text>
+    <text x="209" y="336" fill="#fff" font-size="11" text-anchor="middle">約579坪</text>
+  </g>
+
+  <!-- to Sapporo arrow -->
+  <g>
+    <line x1="120" y1="232" x2="56" y2="240" stroke="#22305C" stroke-width="3"/>
+    <polygon points="56,240 74,232 72,248" fill="#22305C"/>
+    <text x="60" y="218" fill="#22305C" font-size="14" font-weight="700">← 札幌方面</text>
+    <text x="60" y="282" fill="#6A6E76" font-size="12">JR 約25〜30分</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="12" fill="#6A6E76">
+    <rect x="540" y="510" width="220" height="60" rx="6" fill="#fff" stroke="#E3DCCB"/>
+    <rect x="556" y="524" width="16" height="12" fill="#B0883E"/><text x="580" y="535">本物件</text>
+    <rect x="556" y="544" width="16" height="12" fill="#22305C"/><text x="580" y="555">駅 / 鉄道</text>
+    <rect x="660" y="524" width="16" height="12" fill="#EAE3D4"/><text x="684" y="535">主要道路</text>
+  </g>
+
+  <text x="40" y="576" fill="#AEB1B7" font-size="11">※ 位置関係を示す概念図です。距離・縮尺・方位は正確ではありません。</text>
+</svg>
