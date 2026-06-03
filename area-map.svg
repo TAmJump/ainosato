@@ -1,81 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBF8F2"/><stop offset="1" stop-color="#F1EADC"/></linearGradient>
     <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#22305C" flood-opacity="0.22"/></filter>
-    <g id="pin"><path d="M0,-30 C16,-30 26,-18 26,-4 C26,12 6,28 0,36 C-6,28 -26,12 -26,-4 C-26,-18 -16,-30 0,-30 Z" fill="#B0883E" stroke="#8c6a2c" stroke-width="2"/></g>
+    <g id="pin"><path d="M0,-28 C15,-28 24,-17 24,-4 C24,11 6,26 0,33 C-6,26 -24,11 -24,-4 C-24,-17 -15,-28 0,-28 Z" fill="#B0883E" stroke="#8c6a2c" stroke-width="2"/></g>
   </defs>
-  <rect width="1000" height="620" fill="url(#bg)"/>
-  <rect x="12" y="12" width="976" height="596" fill="none" stroke="#E3DCCB" stroke-width="2"/>
+  <rect width="1000" height="720" fill="url(#bg)"/>
+  <rect x="12" y="12" width="976" height="696" fill="none" stroke="#E3DCCB" stroke-width="2"/>
 
-  <!-- greens -->
-  <circle cx="245" cy="505" r="50" fill="#D6E6CF"/>
-  <circle cx="855" cy="500" r="42" fill="#D6E6CF"/>
+  <!-- block tints (north residential blocks light, commercial center slightly warmer) -->
+  <rect x="300" y="180" width="430" height="250" fill="#F6EFDD" opacity="0.7"/>
+
+  <!-- parks / greens -->
+  <g fill="#D6E6CF">
+    <rect x="110" y="100" width="84" height="46" rx="8"/>     <!-- つくし -->
+    <rect x="40" y="300" width="80" height="70" rx="8"/>     <!-- たんぽぽ -->
+    <rect x="860" y="280" width="100" height="70" rx="8"/>   <!-- かっこう -->
+    <rect x="40" y="600" width="95" height="80" rx="8"/>     <!-- ひよこ -->
+    <rect x="300" y="630" width="150" height="60" rx="8"/>   <!-- こもれび -->
+    <rect x="840" y="600" width="120" height="80" rx="8"/>   <!-- 南あいの里公園 -->
+  </g>
+  <!-- green corridors -->
+  <rect x="60" y="40" width="14" height="640" fill="#CFE3CF"/>   <!-- ふれあい緑道 -->
+  <rect x="20" y="470" width="960" height="10" fill="#CFE3CF"/>  <!-- 鉄道沿西緑道 -->
 
   <!-- ROADS -->
-  <g>
-    <rect x="0" y="138" width="1000" height="22" fill="#ECE5D4"/>            <!-- 循環通 (north) -->
-    <rect x="0" y="432" width="1000" height="26" fill="#E7DFCC"/>            <!-- 17号線 (south, frontage) -->
-    <rect x="338" y="40" width="22" height="580" fill="#ECE5D4"/>           <!-- 学園通 (vertical) -->
-    <rect x="778" y="40" width="18" height="580" fill="#ECE5D4"/>           <!-- 中央通 (vertical) -->
+  <g fill="#E9E1CE">
+    <rect x="0" y="150" width="1000" height="20"/>   <!-- 茨戸福移通 -->
+    <rect x="0" y="250" width="1000" height="20"/>   <!-- 1条通 -->
+    <rect x="0" y="360" width="1000" height="18"/>
+    <rect x="430" y="40" width="22" height="660"/>   <!-- スカイウェイ -->
+    <rect x="180" y="40" width="14" height="660"/>
+    <rect x="700" y="40" width="14" height="660"/>
+    <rect x="0" y="600" width="1000" height="16"/>   <!-- 南側道路 17号線方面 -->
   </g>
-  <line x1="0" y1="445" x2="1000" y2="445" stroke="#fff" stroke-width="2.4" stroke-dasharray="16 13"/>
-  <text x="372" y="470" fill="#8a8472" font-size="12">南あいの里区画整理17号線</text>
-  <text x="150" y="132" fill="#8a8472" font-size="12">あいの里循環通</text>
 
-  <!-- JR LINE (horizontal, E-W) -->
-  <rect x="0" y="252" width="1000" height="20" fill="#22305C"/>
-  <line x1="0" y1="262" x2="1000" y2="262" stroke="#fff" stroke-width="2.6" stroke-dasharray="20 16"/>
-  <text x="690" y="244" fill="#22305C" font-size="16" font-weight="700">JR 学園都市線</text>
+  <!-- JR LINE (E-W) -->
+  <rect x="0" y="498" width="1000" height="20" fill="#22305C"/>
+  <line x1="0" y1="508" x2="1000" y2="508" stroke="#fff" stroke-width="2.6" stroke-dasharray="20 16"/>
+  <text x="120" y="492" fill="#22305C" font-size="14" font-weight="700">JR 学園都市線</text>
 
   <!-- STATION -->
-  <g filter="url(#sh)"><rect x="420" y="234" width="170" height="50" rx="8" fill="#22305C"/></g>
-  <text x="505" y="265" fill="#fff" font-size="16" font-weight="700" text-anchor="middle">あいの里教育大駅</text>
-  <!-- south exit -->
-  <rect x="470" y="292" width="70" height="26" rx="5" fill="#fff" stroke="#22305C" stroke-width="2"/>
-  <text x="505" y="310" fill="#22305C" font-size="13" font-weight="700" text-anchor="middle">南口</text>
+  <g filter="url(#sh)"><rect x="395" y="480" width="180" height="50" rx="8" fill="#22305C"/></g>
+  <text x="485" y="511" fill="#fff" font-size="15" font-weight="700" text-anchor="middle">JRあいの里教育大駅</text>
+  <rect x="450" y="538" width="70" height="24" rx="5" fill="#fff" stroke="#22305C" stroke-width="2"/>
+  <text x="485" y="555" fill="#22305C" font-size="12" font-weight="700" text-anchor="middle">南口</text>
 
-  <!-- PROPERTY (south of station) -->
-  <g transform="translate(505,346)" filter="url(#sh)"><use href="#pin"/><circle cx="0" cy="-6" r="11" fill="#fff"/><text x="0" y="-1" fill="#B0883E" font-size="14" font-weight="900" text-anchor="middle">W</text></g>
-  <g filter="url(#sh)"><rect x="405" y="356" width="200" height="68" rx="10" fill="#B0883E"/></g>
-  <text x="505" y="386" fill="#fff" font-size="19" font-weight="900" text-anchor="middle">本物件</text>
-  <text x="505" y="409" fill="#fff" font-size="13" text-anchor="middle">駅 南口至近 ／ 約579坪</text>
+  <!-- directions -->
+  <line x1="150" y1="508" x2="60" y2="508" stroke="#fff" stroke-width="3.4"/><polygon points="60,508 82,499 82,517" fill="#fff"/>
+  <text x="36" y="478" fill="#22305C" font-size="14" font-weight="700">← 札幌方面</text>
+  <text x="36" y="540" fill="#22305C" font-size="11.5" font-weight="600">JR約25〜30分</text>
+  <text x="964" y="492" fill="#6A6E76" font-size="12.5" text-anchor="end">石狩当別方面 →</text>
 
-  <!-- to Sapporo (west) -->
-  <g>
-    <line x1="150" y1="262" x2="64" y2="262" stroke="#fff" stroke-width="3.4"/>
-    <polygon points="64,262 86,253 86,271" fill="#fff"/>
-    <text x="40" y="232" fill="#22305C" font-size="15" font-weight="700">← 札幌方面</text>
-    <text x="40" y="300" fill="#22305C" font-size="12.5" font-weight="600">JR 約25〜30分</text>
+  <!-- PROPERTY (south of station, 南あいの里6) -->
+  <g transform="translate(605,556)" filter="url(#sh)"><use href="#pin"/><circle cx="0" cy="-7" r="10" fill="#fff"/><text x="0" y="-2" fill="#B0883E" font-size="13" font-weight="900" text-anchor="middle">W</text></g>
+  <g filter="url(#sh)"><rect x="510" y="566" width="190" height="62" rx="10" fill="#B0883E"/></g>
+  <text x="605" y="593" fill="#fff" font-size="18" font-weight="900" text-anchor="middle">本物件</text>
+  <text x="605" y="615" fill="#fff" font-size="12" text-anchor="middle">駅 南口至近 ／ 約579坪</text>
+
+  <!-- ===== BLOCK LABELS (faint) ===== -->
+  <g fill="#B7AE97" font-size="13" font-weight="700">
+    <text x="250" y="70">あいの里2条5丁目</text>
+    <text x="540" y="70">2条6丁目</text>
+    <text x="770" y="70">2条7丁目</text>
+    <text x="250" y="220">1条5丁目</text>
+    <text x="600" y="225">1条6丁目</text>
+    <text x="790" y="250">1条7丁目</text>
+    <text x="150" y="335">あいの里1-4</text>
+    <text x="330" y="430">あいの里1-5</text>
+    <text x="600" y="430">あいの里1-6</text>
+    <text x="180" y="660">南あいの里4</text>
+    <text x="360" y="600">南あいの里5</text>
+    <text x="560" y="660">南あいの里6</text>
+    <text x="760" y="600">南あいの里7</text>
   </g>
-  <text x="960" y="290" fill="#6A6E76" font-size="12.5" text-anchor="end">石狩当別方面 →</text>
 
-  <!-- FACILITY BADGES (generic, no names) -->
-  <!-- education (north) -->
-  <g transform="translate(215,185)"><circle r="26" fill="#fff" stroke="#22305C" stroke-width="3" filter="url(#sh)"/><polygon points="0,-11 15,-3 0,5 -15,-3" fill="#22305C"/><rect x="10" y="-3" width="3" height="11" fill="#22305C"/><text x="0" y="46" fill="#6A6E76" font-size="12.5" text-anchor="middle">教育機関</text></g>
-  <!-- shopping (north of station) -->
-  <g transform="translate(650,185)"><circle r="26" fill="#fff" stroke="#B0883E" stroke-width="3" filter="url(#sh)"/><path d="M-10,-5 h20 l-3,16 h-14 z" fill="none" stroke="#B0883E" stroke-width="3"/><path d="M-5,-5 a5,6 0 0 1 10,0" fill="none" stroke="#B0883E" stroke-width="3"/><text x="0" y="46" fill="#6A6E76" font-size="12.5" text-anchor="middle">商業施設</text></g>
-  <!-- care / welfare (NE) -->
-  <g transform="translate(855,185)"><circle r="26" fill="#fff" stroke="#C0364A" stroke-width="3" filter="url(#sh)"/><path d="M0,9 C-12,0 -10,-11 -2,-9 C0,-8 0,-8 2,-9 C10,-11 12,0 0,9 Z" fill="#C0364A"/><text x="0" y="46" fill="#6A6E76" font-size="12.5" text-anchor="middle">介護・福祉施設</text></g>
-  <!-- clinic (near station) -->
-  <g transform="translate(720,330)"><circle r="24" fill="#fff" stroke="#C0364A" stroke-width="3" filter="url(#sh)"/><rect x="-4" y="-12" width="8" height="24" rx="2" fill="#C0364A"/><rect x="-12" y="-4" width="24" height="8" rx="2" fill="#C0364A"/><text x="0" y="44" fill="#6A6E76" font-size="12" text-anchor="middle">医療機関</text></g>
-  <!-- park (south) -->
-  <g transform="translate(245,505)"><circle r="22" fill="#fff" stroke="#5E8E5A" stroke-width="3" filter="url(#sh)"/><rect x="-2" y="2" width="4" height="11" fill="#5E8E5A"/><circle cx="0" cy="-4" r="10" fill="#9CC195"/><text x="0" y="42" fill="#6A6E76" font-size="12" text-anchor="middle">公園</text></g>
-  <text x="855" y="552" fill="#6A6E76" font-size="12.5" text-anchor="middle">周辺住宅街</text>
+  <!-- road labels -->
+  <g fill="#9a927e" font-size="11">
+    <text x="60" y="146">茨戸福移通</text>
+    <text x="436" y="120" transform="rotate(90 441 120)">スカイウェイ</text>
+  </g>
+
+  <!-- ===== FACILITY LABELS (dot + name) ===== -->
+  <!-- 医療(red) -->
+  <g font-size="11.5" fill="#43474E">
+    <circle cx="262" cy="100" r="5" fill="#C0364A"/><text x="272" y="104" font-weight="600">北海道医療大学病院</text>
+    <circle cx="630" cy="350" r="5" fill="#C0364A"/><text x="640" y="354">クリニック・歯科</text>
+  </g>
+  <!-- 商業(gold) -->
+  <g font-size="11.5" fill="#43474E">
+    <circle cx="390" cy="150" r="5" fill="#B0883E"/><text x="400" y="154">ツルハドラッグ</text>
+    <circle cx="300" cy="290" r="5" fill="#B0883E"/><text x="310" y="294">コープさっぽろ</text>
+    <circle cx="455" cy="285" r="5" fill="#B0883E"/><text x="465" y="289">マクドナルド</text>
+    <circle cx="320" cy="320" r="5" fill="#B0883E"/><text x="330" y="324">東光ストア</text>
+    <circle cx="560" cy="300" r="5" fill="#B0883E"/><text x="570" y="304">ビバホーム</text>
+    <circle cx="470" cy="320" r="5" fill="#B0883E"/><text x="480" y="324">TSUTAYA</text>
+  </g>
+  <!-- 金融・公共(navy) -->
+  <g font-size="11.5" fill="#43474E">
+    <circle cx="300" cy="258" r="5" fill="#22305C"/><text x="310" y="262">北洋銀行</text>
+    <circle cx="560" cy="258" r="5" fill="#22305C"/><text x="570" y="262">北海道銀行</text>
+    <circle cx="600" cy="120" r="5" fill="#22305C"/><text x="610" y="124">北区リサイクルセンター</text>
+    <circle cx="330" cy="455" r="5" fill="#22305C"/><text x="340" y="459">郵便局</text>
+    <circle cx="470" cy="455" r="5" fill="#22305C"/><text x="480" y="459">あいの里交番</text>
+    <circle cx="650" cy="455" r="5" fill="#22305C"/><text x="660" y="459">拓北・あいの里地区センター</text>
+  </g>
+  <!-- 公園(green italic) -->
+  <g font-size="11" fill="#5E8E5A" font-style="italic">
+    <text x="116" y="96">つくし公園</text>
+    <text x="48" y="296">たんぽぽ公園</text>
+    <text x="864" y="276">かっこう公園</text>
+    <text x="44" y="596">南あいの里ひよこ公園</text>
+    <text x="306" y="626">南あいの里こもれび公園</text>
+    <text x="846" y="596">南あいの里公園</text>
+  </g>
 
   <!-- COMPASS -->
-  <g transform="translate(935,80)"><circle r="25" fill="#fff" stroke="#E3DCCB" stroke-width="2"/><polygon points="0,-19 6,2 0,-4 -6,2" fill="#C0364A"/><polygon points="0,19 6,-2 0,4 -6,-2" fill="#9AA0AC"/><text x="0" y="-26" fill="#22305C" font-size="12" font-weight="700" text-anchor="middle">N</text></g>
+  <g transform="translate(935,86)"><circle r="24" fill="#fff" stroke="#E3DCCB" stroke-width="2"/><polygon points="0,-18 6,2 0,-3 -6,2" fill="#C0364A"/><polygon points="0,18 6,-2 0,3 -6,-2" fill="#9AA0AC"/><text x="0" y="-25" fill="#22305C" font-size="12" font-weight="700" text-anchor="middle">N</text></g>
 
   <!-- TITLE -->
-  <text x="40" y="58" fill="#B0883E" font-size="13" font-weight="700" letter-spacing="3" font-family="Inter,sans-serif">AREA GUIDE</text>
-  <text x="40" y="86" fill="#22305C" font-size="24" font-weight="900">周辺案内図</text>
+  <text x="40" y="56" fill="#B0883E" font-size="13" font-weight="700" letter-spacing="3" font-family="Inter,sans-serif">AREA GUIDE</text>
+  <text x="40" y="86" fill="#22305C" font-size="23" font-weight="900">周辺案内図</text>
 
   <!-- LEGEND -->
-  <g transform="translate(40,560)" font-size="12.5" fill="#5A5E66">
-    <rect x="-8" y="-26" width="486" height="40" rx="8" fill="#fff" stroke="#E3DCCB"/>
-    <rect x="6" y="-15" width="16" height="13" rx="2" fill="#B0883E"/><text x="30" y="-4">本物件</text>
-    <rect x="92" y="-13" width="22" height="9" rx="2" fill="#22305C"/><text x="122" y="-4">JR / 駅</text>
-    <rect x="196" y="-15" width="22" height="13" fill="#E7DFCC"/><text x="226" y="-4">主要道路</text>
-    <rect x="300" y="-15" width="22" height="13" rx="3" fill="#D6E6CF"/><text x="330" y="-4">公園 / 緑地</text>
+  <g transform="translate(40,690)" font-size="12" fill="#5A5E66">
+    <rect x="-8" y="-26" width="690" height="38" rx="8" fill="#fff" stroke="#E3DCCB"/>
+    <rect x="4" y="-15" width="15" height="12" rx="2" fill="#B0883E"/><text x="26" y="-5">本物件</text>
+    <rect x="92" y="-13" width="20" height="8" rx="2" fill="#22305C"/><text x="120" y="-5">JR / 駅</text>
+    <circle cx="210" cy="-9" r="5" fill="#C0364A"/><text x="222" y="-5">医療</text>
+    <circle cx="280" cy="-9" r="5" fill="#B0883E"/><text x="292" y="-5">商業</text>
+    <circle cx="350" cy="-9" r="5" fill="#22305C"/><text x="362" y="-5">金融・公共</text>
+    <rect x="448" y="-15" width="18" height="12" rx="3" fill="#D6E6CF"/><text x="472" y="-5">公園・緑地</text>
+    <rect x="560" y="-15" width="18" height="12" fill="#E9E1CE"/><text x="584" y="-5">道路</text>
   </g>
-  <text x="960" y="600" fill="#AEB1B7" font-size="11" text-anchor="end">※ 周辺の位置関係を示すイメージ図です。距離・縮尺・方位は正確ではありません。</text>
+  <text x="964" y="704" fill="#AEB1B7" font-size="11" text-anchor="end">※ 周辺の位置関係を示すイメージ図です。距離・縮尺・方位は正確ではありません。</text>
 </svg>
